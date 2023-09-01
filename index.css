@@ -1,0 +1,90 @@
+*{
+    /* margin: 0; */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(255,205,255);
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+h1{
+    margin-top: 100px;
+}
+
+.container{
+    height: 600px;
+    width: 500px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    transform: rotate(20deg)
+    /* border: 1px solid black; */
+}
+
+.upper{
+    margin: 50px;
+    position: relative;
+    z-index: 2;
+    height: 200px;
+    width: 200px;
+    background: green;
+    border-radius: 100%;    
+    border-bottom: 50px solid green;
+    /* border: 2px solid black; */
+    transition: 0.2s ease;
+}
+
+.lower{
+    margin: 50px;
+    position: relative;
+    top: -50px;
+    height: 200px;
+    width: 200px;
+    /* z-index: 1; */
+    background: green;
+    border-radius: 100%;    
+    border-bottom: 66px solid rgb(255,205,255) ;
+    transform: rotate(180deg);
+    /* border: 2px solid black; */
+}
+
+.cover{
+    margin: 50px;
+    height: 50px;
+    width: 200px;
+    border-radius: 100%;
+    background: red;
+    border-bottom: 50px solid transparent ;
+    position: relative;
+    top: 117px;
+    z-index: 1;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.entire{
+    position: relative;
+    top: -299px;
+}
+
+.move{
+    transform: translateX(400px);
+    border-bottom: 50px solid rgb(255,205,255);
+}
+
+.seed{
+    height: 5px;
+    width: 5px;
+    background: black;
+    border-radius: 100%;
+    position: relative;
+    left: 6px;
+    top: 20px;
+}
